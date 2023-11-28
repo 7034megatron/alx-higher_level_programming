@@ -7,4 +7,3 @@ def uppercase(s):
             upper_char = chr(ord(char) - ord('a') + ord('A'))
         print("{}".format(upper_char), end="")
     print("")
-
