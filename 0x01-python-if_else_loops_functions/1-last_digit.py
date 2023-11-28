@@ -2,11 +2,13 @@
 import random
 
 number = random.randint(-10000, 10000)
-lastDigit = abs(number) % 10
+mod = number % 10 if number > 10 else number % -10
 
-if int(lastDigit) > 5:
-    print("Last digit of", number, "is", lastDigit, "and is greater than 5")
-elif lastDigit == 0:
-    print("Last digit of", number, "is", lastDigit, "and is 0")
+print("Last digit of {:d} is {:d} and is ".format(number, mod), end="")
+
+if mod > 5:
+    print("Greater than 5")
+elif mod == 0:
+    print("0")
 else:
-    print("Last digit of", number, "is", lastDigit, "and is less than 6 and not 0")
+    print("less than 6 and not 0")
