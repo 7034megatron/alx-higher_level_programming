@@ -7,10 +7,11 @@ def safe_print_list(my_list=[], x=0):
         for i in range(x):
             print(my_list[i], end = "")
             int(my_list[i])
+            count += 1
             result.append(my_list[i])
 
     except Exception:
         pass: 
 
     print() 
-    return len(results)
+    return count
