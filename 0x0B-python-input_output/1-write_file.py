@@ -1,11 +1,15 @@
 #!/usr/bin/python3
 
-"""
-This program is for writing output
-"""
+"""Defines a function that writes into text."""
 
 def write_file(filename="", text=""):
-    """This function writes to the standart output"""
-    with open('filename', 'w', encoding="utf-8") as file:
-        for line in file:
-            return file.write(text)
+    """Write a string to a UTF8 text file.
+    Args:
+        filename (str): The name of the file to write.
+        text (str): The text to be  writen to the file arguement.
+    Returns:
+        The number of characters written.
+    """
+    with open(filename, "w", encoding="utf-8") as f:
+        return f.write(text)
+
