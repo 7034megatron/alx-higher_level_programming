@@ -1,0 +1,29 @@
+# Test cases for text_indentation function
+
+# Test Case 1
+>>> text_indentation("This is a sample text. It has multiple sentences.")
+This is a sample text.
+It has multiple sentences.
+
+# Test Case 2
+>>> text_indentation("Another text with\nline breaks? And colons:")
+Another text with
+line breaks?
+And colons:
+
+# Test Case 3 - TypeError (non-string input)
+>>> text_indentation(123)
+Traceback (most recent call last):
+    ...
+TypeError: text must be a string
+
+# Test Case 4
+>>> text_indentation("A single line text.")
+A single line text.
+
+# Test Case 5
+>>> text_indentation("A text with colons: and dots. And line breaks?\nYes!")
+A text with colons:
+and dots.
+And line breaks?
+Yes!
