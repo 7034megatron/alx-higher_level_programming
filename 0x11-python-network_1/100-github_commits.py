@@ -1,6 +1,6 @@
 import requests
 import sys
-***Solve challenge that takes twwo arguements***
+"""Solve challenge that takes twwo arguements"""
 def fetch_commits(repo_name, owner_name):
     url = f"https://api.github.com/repos/{owner_name}/{repo_name}/commits"
     response = requests.get(url)
